@@ -1,0 +1,7 @@
+import Foundation
+var num: Int = Int(readLine()!)!
+var total = 0
+for i in 1...num{
+  total += i
+}
+print(total)
