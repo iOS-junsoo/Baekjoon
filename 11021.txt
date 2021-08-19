@@ -1,0 +1,12 @@
+import Foundation
+var num: Int = Int(readLine()!)!
+
+for i in 1...num{
+
+  var array: [Int] = []
+
+  array = (readLine()?.split(separator: " ").map { Int($0)! })!
+	
+	print("Case #\(i): \(array[0] + array[1])")
+
+}
