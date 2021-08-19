@@ -1,0 +1,5 @@
+import Foundation
+var num: Int = Int(readLine()!)!
+for i in 1...num{
+    print(i)
+}
