@@ -1,0 +1,7 @@
+import Foundation
+let A = Int(readLine()!)!
+let B = Int(readLine()!)! 
+print(A*(B%10))
+print(A*((B/10)%10))
+print(A*((B/10)/10))
+print((A*((B/10)/10) * 100) + (A*((B/10)%10) * 10) + A*(B%10))
