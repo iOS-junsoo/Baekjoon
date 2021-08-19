@@ -1,0 +1,7 @@
+import Foundation //입력부분 참고 - https://sweetdev.tistory.com/360
+var number = Int(readLine()!)!
+for _ in 1...number {
+    var array: [Int] = []
+    array = (readLine()?.split(separator: " ").map { Int($0)! })!
+    print(array[0] + array[1])
+}
