@@ -1,0 +1,4 @@
+import Foundation
+let num = Int(readLine()!)!
+let numsArr = readLine()!.split(separator:" ").map{Int(String($0))!}
+print(numsArr.min()!, numsArr.max()!)
