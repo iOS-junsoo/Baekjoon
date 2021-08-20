@@ -1,0 +1,10 @@
+import Foundation
+let inputValues = readLine()!.split(separator: " ").map { Int($0)! }
+let array = readLine()!.split(separator: " ").map { Int($0)! }
+let count = inputValues[0]
+let undernum = inputValues[1]
+for i in 0...count - 1{
+    if array[i] < undernum{
+        print(array[i],terminator: " ")
+    }
+}
