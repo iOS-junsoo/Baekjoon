@@ -1,0 +1,20 @@
+import Foundation
+var num = Int(readLine()!)!
+var count = 1
+var ten = 0
+var one = 0
+var temp = 0
+var total = num
+while true {
+    ten = total / 10
+    one = total % 10
+    temp = (ten + one) % 10
+    total = (one * 10) + temp
+    if total == num {
+        
+        break
+    }else {
+        count += 1
+    }
+}
+print(count)
