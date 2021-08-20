@@ -1,0 +1,12 @@
+import Foundation//다른풀이 참고
+var numbers :[Int] = []
+for _ in 1...9 {
+    let num = Int(readLine()!)! //총 9번 동안 숫자의 입력을 받아 변수에 저장
+    numbers.append(num) //위에서 받은 num을 array에 추가
+}
+for i in 0...8 {
+    if numbers[i] == numbers.max()! {
+        print(numbers.max()!)
+        print(i+1)
+    }
+}
