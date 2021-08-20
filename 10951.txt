@@ -1,0 +1,5 @@
+import Foundation
+while let check = readLine() { //readLine() 자체가 true인지 false인지 파악한다. 
+    let num = check.split(separator: " ").map { Int($0)! }
+    print(num[0] + num[1])
+}
