@@ -1,0 +1,7 @@
+import Foundation
+var star = ""
+var num: Int = Int(readLine()!)!
+for _ in 1...num{
+    star += "*"
+    print(star)
+}
