@@ -1,0 +1,11 @@
+import Foundation
+var num: Int = Int(readLine()!)!
+for i in 1...num{
+    for _ in stride(from: num, to: i, by: -1){//num부터 i까지 -1 로 반복
+        print(" ",terminator: "")
+    }
+    for _ in stride(from: 0, to: i, by: +1){//0부터 i까지 +1로 반복
+        print("*",terminator: "")
+    }
+    print("")//줄바꿈 부분
+}
