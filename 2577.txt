@@ -1,0 +1,14 @@
+import Foundation
+let A = Int(readLine()!)!
+let B = Int(readLine()!)!
+let C = Int(readLine()!)!
+var number = A*B*C
+var numbers = [Int](repeating: 0, count: 10)
+while number > 0 {
+    let n = number % 10 //뒷자리부터 확인(나머지를 통해서)
+    numbers[n] += 1 //해당 숫자의 index에 +1
+    number /= 10 //해당 몫을 다시 변수에 저장
+}
+for i in 0...9{
+    print(numbers[i])
+}
