@@ -1,0 +1,22 @@
+import Foundation //다른 풀이 참고 (set 활용!!)
+var number = Set<Int>()
+for _ in 0...9 {
+    number.insert(Int(readLine()!)!%42)
+}
+print(number.count)
+
+/*
+//런타임 오류난 코드 -> 왜????
+import Foundation
+var lines = [Int]()
+var array = [Int](repeating: 0, count: 42)
+var result = 10
+var count = 0
+for _ in 0..<10 {
+    array[Int(readLine()!)!%42] += 1
+    if array[Int(readLine()!)! % 42] > 1{
+        count += 1
+    }
+}
+print(result - count)
+*/
