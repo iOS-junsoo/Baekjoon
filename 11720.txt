@@ -1,0 +1,8 @@
+import Foundation
+var num: Int = Int(readLine()!)! //첫번째 수
+var number = 0
+let array = readLine()! //연속된 수
+    for i in array { //i는 해당 인덱스의 값
+        number += Int(String(i))!
+    }
+print(number)
