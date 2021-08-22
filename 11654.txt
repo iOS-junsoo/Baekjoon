@@ -1,0 +1,2 @@
+print(Character(readLine()!).asciiValue!) //이건 풀이법 참고했다. 
+//이 문자가 ASCII 문자일 경우 이 문자의 ASCII 인코딩 값입니다.
