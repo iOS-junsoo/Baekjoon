@@ -1,0 +1,21 @@
+import Foundation
+var num: Int = Int(readLine()!)! //첫번쨰 숫자를 받고
+
+for _ in 1...num{ //1부터 받은 숫자까지 반복
+    var aver = 0
+    var over = 0
+    var array: [Int] = []
+    array = (readLine()?.split(separator: " ").map { Int($0)! })!
+    let first = array[0]
+    var total = 0
+    for i in 1...first {
+        total += array[i] //점수의 총합
+    }
+    aver = total / first //평균 구하기
+    for i in 1...first {
+        if aver < array[i] {
+            over += 1 //평균넘은 사람 구하기
+        }
+    }
+    print(String(format: "%.3f", Float(over) / Float(first) * 100),"%",separator: "") // 소수점 3까지 나타냄
+}
