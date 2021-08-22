@@ -1,0 +1,19 @@
+import Foundation
+var num: Int = Int(readLine()!)! //첫번쨰 숫자를 받고
+var point = 0 //o 증가량 체크 변수
+var total = 0 //point 총합
+for _ in 1...num{ //1부터 받은 숫자까지 반복
+  let array = readLine()! //연속된 숫자를 받을 떄 하나의 배열로 받아드린다.
+    var point = 0 // O 증가량 체크 변수
+    var total = 0 //point 총합
+  for i in array { //붙은 숫자를 입력 받는데 i는 인덱스가 아니라 인덱스 안의 값
+    if i == "O" {
+        point += 1
+        total += point
+    }
+    if i == "X" {
+        point = 0
+    }
+  }
+  print(total)
+}
