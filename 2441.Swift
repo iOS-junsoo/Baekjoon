@@ -1,13 +1,15 @@
 import Foundation
-var num = 5
-//var num: Int = Int(readLine()!)!
-for i in stride(from: num, to: 0, by: -1){
-    for _ in stride(from: i - 4, to: 1, by: 1){
-        print(" ",terminator: "")
+let num = Int(readLine()!)!
+for i in 1...num {
+    var result = ""
+    for _ in 0..<i-1 {
+        result += " "
+        
     }
-        for _ in 1...i{
-            print("*",terminator: "")
-        }
+    for _ in 1...num-i+1 {
+        result += "*"
+        
+    }
+    print(result)
     
-    print("")//줄바꿈 부분
 }
